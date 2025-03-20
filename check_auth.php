@@ -14,7 +14,6 @@ if (isset($_POST['pass'])) {
     $pass = "";
 }
 
-// Menggunakan prepared statement dengan mysqli
 $query = "SELECT user.id_user, pegawai.nama 
           FROM user 
           JOIN pegawai ON AES_DECRYPT(user.id_user, 'nur') = pegawai.nik
