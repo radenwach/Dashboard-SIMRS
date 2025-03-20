@@ -5,5 +5,5 @@ setlocal
 :: Langsung membuka halaman tertentu di browser
 start "" "http://localhost/kunjungan/index.php"
 
-echo Membuka http://localhost/informasi/index.php di browser...
+echo Membuka http://localhost/kunjungan/index.php di browser...
 exit
