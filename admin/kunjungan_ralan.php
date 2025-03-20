@@ -1,18 +1,18 @@
 <?php
-require 'configrs.php'; // Mengimpor koneksi database
+require 'configrs.php';
 
-// Tangkap data dari form
+
 $asuransi = $_GET['asuransi'] ?? '';
 $poli = $_GET['poli'] ?? '';
 $dokter = $_GET['dokter'] ?? '';
 $tgl_masuk = isset($_GET['tgl_masuk']) ? $_GET['tgl_masuk'] : date('Y-m-d');
 
-// Pagination
-$limit = 20; // Jumlah data per halaman
-$page = isset($_GET['page_no']) ? (int)$_GET['page_no'] : 1;
-$page = max($page, 1); // Pastikan $page minimal 1
 
-// Hitung offset
+$limit = 20;
+$page = isset($_GET['page_no']) ? (int)$_GET['page_no'] : 1;
+$page = max($page, 1);
+
+
 $offset = ($page - 1) * $limit;
 
 // Query dasar
