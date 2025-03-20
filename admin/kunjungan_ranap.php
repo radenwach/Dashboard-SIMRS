@@ -1,5 +1,5 @@
 <?php
-require 'configrs.php'; // Mengimpor koneksi database
+require 'configrs.php';
 
 // Tangkap data dari form
 $asuransi = $_GET['asuransi'] ?? '';
